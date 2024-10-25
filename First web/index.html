@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 id="title">Fitness Lifestyle Survey</h1>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p id="description">"Help us learn more about your fitness habits and goals to tailor personalized workout plans for you."</p>
+        <!-- info -->
+        <form id="survey-form">
+          <div>
+          <label id="name-label" for="name">What's your name:
+          <input id="name" type="text" name="name" placeholder="(Enter your name)" required></label>
+          </div>
+    
+          <div>
+          <label id="email-label" for="email">What's your email
+            <input type="email" id="email" name="email" placeholder="(Enter your email)" required ></label>
+          </div>
+          <div>
+            <label id="number-label" for="number">What's your age:
+              <input type="number" id="number" name="number" min="10" max="120" placeholder="(Enter your age)" required ></label>
+          </div>
+       <!-- dropdown -->
+          <div>
+          <label for="dropdown">how often do you exercise?</label>
+          <select id="dropdown" name="frequency">
+            <option value="(select)">(select)</option>
+            <option value="daily">daily</option>
+            <option value="3-5 times a week">3-5 times a week</option>
+            <option value="occasionally">occasionally</option>
+            <option value="rarely">rarely</option>
+          </select>
+          </div>
+    <!-- goal(radio) -->
+        
+        <h3>What is your primary fitness goal?</h3>
+         <div class="goal">
+         <label for="strength">Build Strength:</label>
+         <input type="radio" id="strength" name="goal" value="strength">
+       </div>
+    
+       <div class="goal">
+        <label for="weight-loss">To lose weight</label>
+        <input type="radio" id="weight-loss" name="goal" value="weight-loss">
+        </div>
+    
+        <div class="goal">
+          <label for="endurance">To increase endurance:
+          <input type="radio" id="increase-endurance" name="goal" value="endurance"></label>
+        
+        </div>
+    
+        <h3>What type of exercises do you do?</h3>
+        
+        <!-- checkbox -->
+       
+        <div>
+        <label for="running">Running:
+         <input type="checkbox" id="running" name="exercise-type" value="running"></label>
+        </div>
+        <div>
+        <label for="weightlifting">Weightlifting:
+         <input type="checkbox" id="weightlifting" name="exercise-type" value="weightlifting"></label>
+        </div>
+        <div>
+           <label for="cycling">Cycling:
+         <input type="checkbox" id="cycling" name="exercise-type" value="cycling"></label>
+        </div>
+        <div>
+          <label for="yoga">Yoga:
+           <input type="checkbox" id="yoga" name="exercise-type" value="yoga"></label>
+        </div>
+        
+        <div>
+        <label for="comments"><h3>Any additional comments?</h3></label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts"></textarea>
+        </div>
+    
+        <input id="submit" type="submit">
+          </form>
+    </body>
+
+</html>

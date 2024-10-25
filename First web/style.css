@@ -1,0 +1,60 @@
+body {
+    background-image: url('https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background in place when scrolling */
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  h1, p{
+    color: white;
+    text-align: center;
+    margin: 10px
+  }
+  
+  form {
+    text-align: left;
+    color: #f4f4f9;
+    background-color: rgba(0, 0, 0, 0.7); /* Tweak opacity for better readability */
+    padding: 25px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    max-width: 500px; /* Limit width to avoid stretching on large screens */
+    margin: 0 auto; /* Center form horizontally */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    background-color: #243642;
+    border: 1px solid #243642;
+    margin: 10px;
+    width: 100%;
+  }
+  
+  /* Style the checkbox separately */
+  input[type="checkbox"] {
+    width: auto; /* Let the checkbox take its natural size */
+    margin: 0 10px 0 0; /* Adjust margins for spacing */
+    vertical-align: middle; /* Align it vertically with the label */
+  }
+  h3 {
+    color: grey;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
